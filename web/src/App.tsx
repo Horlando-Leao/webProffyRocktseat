@@ -1,7 +1,7 @@
 //obrigatorio
 import React from 'react';
 import './assets/styles/global.css';
-import Landing from './pages/Landing'; 
+import Routes from './router';
 
 //funções no react, são funções que retornam html
 //funções são componenetes
@@ -9,7 +9,7 @@ import Landing from './pages/Landing';
 
 function App() {
   return (
-    <Landing/>
+    <Routes/>
   );
 }
 
