@@ -1,5 +1,5 @@
 
-//react e rotas react
+//modulo react e rotas-react
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
@@ -9,14 +9,14 @@ import TeacherList from './pages/TeacherList';
 import TeacherForm from './pages/TeacherForm';
 
 //Propriedades no react são atributos que passa para um tag
+
 function Routes(){
     return(
+        //exact: verificar rota exata para o barra
         <BrowserRouter>
-            <Route path="/"  component={Landing} />
+            <Route path="/"  exact component={Landing} />
             <Route path="/study"  component={TeacherList} />
             <Route path="/give-classes"  component={TeacherForm} />
-
-
         </BrowserRouter>
     )
 }

@@ -1,5 +1,7 @@
 
 import React from 'react';
+//componente do react para substituir a tag "<a> </a>"
+import { Link } from 'react-router-dom'
 
 //imagens
 import logoImg from '../../assets/images/logo.svg';
@@ -31,15 +33,15 @@ function Landing() {
             
             
             <div className="buttons-container">
-                <a href="www.google.com.br" className="study">
+                <Link to="/study" className="study">
                     <img src={studyIcon} alt="Estudar"/>
                     Estudar
-                </a>
+                </Link>
 
-                <a href="www.google.com.br" className="give-classes">
+                <Link to="/give-classes" className="give-classes">
                     <img src={giveClassesIcon} alt="Dar aulas"/>
                     Dar aulas
-                </a>
+                </Link>
             </div>
 
             <span className="total-connections">
