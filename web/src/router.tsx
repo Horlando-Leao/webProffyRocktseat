@@ -9,10 +9,9 @@ import TeacherList from './pages/TeacherList';
 import TeacherForm from './pages/TeacherForm';
 
 //Propriedades no react são atributos que passa para um tag
-
+//exact: verificar rota exata para o barra
 function Routes(){
     return(
-        //exact: verificar rota exata para o barra
         <BrowserRouter>
             <Route path="/"  exact component={Landing} />
             <Route path="/study"  component={TeacherList} />
@@ -22,4 +21,5 @@ function Routes(){
 }
 
 export default Routes;
+
 
